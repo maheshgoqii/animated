@@ -1,22 +1,12 @@
-# Mp4 File include at root level directory, name as Android and IOS
+# Animating styles 
+- In the last section, we learned how to make simple animations, what shared values are and how to use them. Now, we'll learn a different way of passing animation styles to components. We'll also go over the difference between animating styles and props and how to handle them using useAnimatedStyle and useAnimatedProps.
 
-# Expo - Node 22
-- I have used expo in this, I can also use React Native CLI, but good for quickstart
-- mannually install the slider, font, gredient package using expo, good for dependancies
+## useSharedValue
+- useSharedValue is a hook that returns a shared value. A shared value is a value that can be used to animate a component.
 
-```
-   npx expo install @react-native-community/slider
-   npx expo install expo-linear-gradient
-   npx expo install @expo-google-fonts/roboto-mono
+## withSpring
+- WithSpring returns a value that modifies the shared value. This will create a bouncy spring animation that transitions
 
-```
 
-# Use of EAS
-- create developement build using 
-```
-eas build --platform android --profile development
-```
 
-# Storage Strategies
-- Local Storage - local level (depend on component lifecycle)
-- Redux Storage - global level
+# Animating props
